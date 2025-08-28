@@ -1,0 +1,21 @@
+#include<stdio.h>
+int iseven(int n);
+int main()
+{
+    int n,i,evcount=0,odcount=0;
+    for(i=1;i<=5;i++)
+ {
+ scanf("%d",&n);
+if(iseven(n))
+evcount++;
+else
+odcount++;
+}
+printf("Odd numbers=%d\n",odcount);
+printf("Even numbers=%d\n",evcount);
+}
+int iseven(int n)
+{
+return n%2==0;
+
+}
