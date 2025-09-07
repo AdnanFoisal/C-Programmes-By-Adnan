@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int n,i,temp,count=0,digit,tempu,sum=0;
+	scanf("%d",&n);
+	temp=n;
+	while(temp!=0)
+	{
+		temp/=10;
+		count++;
+		}
+		int arr[count];
+		tempu=n;
+		for(i=0;i<count;i++)
+		{
+			digit=tempu%10;
+			arr[i]=digit;
+			tempu/=10;
+			}
+			for(i=0;i<count;i++)
+			{
+				
+				sum=sum*10+arr[i];
+				}
+				printf("%d",sum);
+	}
