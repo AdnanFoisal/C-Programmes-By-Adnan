@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+	int t,count=0;
+	long long int a,b;
+	scanf("%d",&t);
+	while(t--)
+	{
+		scanf("%lld %lld",&a,&b);
+	int steps = (b - (a % b)) % b;
+        printf("%d\n", steps);
+			
+		}
+	}
