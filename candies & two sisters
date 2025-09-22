@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+	int t,total=0;
+	long long int n;
+	scanf("%d",&t);
+	while(t--)
+	{
+		scanf("%lld",&n);
+		total=(n-1)/2;
+		printf("%d\n",total);
+		}
+	
+	}
